@@ -1,21 +1,38 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { AppLoading } from "expo";
+import { StatusBar } from "expo-status-bar";
+import {
+  useFonts,
+  Ubuntu_700Bold,
+  Ubuntu_400Regular,
+} from "@expo-google-fonts/ubuntu";
+import { SecularOne_400Regular } from "@expo-google-fonts/secular-one";
+import {
+  QuattrocentoSans_400Regular,
+  QuattrocentoSans_700Bold,
+} from "@expo-google-fonts/quattrocento-sans";
+import { Prompt_700Bold } from "@expo-google-fonts/prompt";
+
+import AppStack from "./src/routes/AppStack";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  let [fontsLoaded] = useFonts({
+    Ubuntu_700Bold,
+    SecularOne_400Regular,
+    Ubuntu_400Regular,
+    QuattrocentoSans_400Regular,
+    QuattrocentoSans_700Bold,
+    Prompt_700Bold,
+  });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <>
+        <AppStack />
+        <StatusBar style="dark" />
+      </>
+    );
+  }
+}
