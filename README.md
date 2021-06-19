@@ -31,7 +31,8 @@ O Aplicativo CovidTracker foi desenvolvido utilizado o framework [React Native](
 
 
 ## Screenshots
-<p float="left">
+
+<p align="center" width="100%">
 <img
 		width="170"
 		alt="Capture 1"
@@ -44,6 +45,8 @@ O Aplicativo CovidTracker foi desenvolvido utilizado o framework [React Native](
 		width="170"
 		alt="Capture 3"
 		src="https://i.imgur.com/A5SDcw2.png">
+</p>
+<p align="center" width="100%">
 <img
 		width="170"
 		alt="Capture 4"
