@@ -2,14 +2,14 @@
 <h1 align="center">
 <img
 		alt="CovidTracker - React Native"
-		src="https://edumoliveira.github.io/lp-corona/src/assets/img/logo-black-sm.png">
+		src="https://edumoliveira.github.io/landing-page-coronavirus/src/assets/img/logo-black-sm.png">
 </h1>
 <h3 align="center">
 	CovidTracker - React Native
 </h3>
 
 <p align="center">
-	<img src="https://edumoliveira.github.io/lp-corona/src/assets/img/group_mockup.png" width="500">
+	<img src="https://edumoliveira.github.io/landing-page-coronavirus/src/assets/img/group_mockup.png" width="500">
 </p>
 
 <p align="center">
